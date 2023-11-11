@@ -2,15 +2,19 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int[] array = new int[]{49, 15, 40, 27, 20, 19, 50, 2, 12, 28, 49, 44, 9, 59, 18, 5, 30, 6, 7, 28};
-        /* Chamada Bubble
-        array = Bubble.sort(array,array.length);
-        /*
-        Chamada Inseriton sort
-        array = Insertion.Sort(array);
-        */
-        System.out.println(Arrays.toString(array));
+        quick();
+    }
 
+    public static void bubble(){
+        //Faz a ordenação com o Bubble Sort
+        int[] array = new int[]{49, 15, 40, 27, 20, 19, 50, 2, 12, 28, 49, 44, 9, 59, 18, 5, 30, 6, 7, 28};
+        array = Bubble.sort(array,array.length);
+    }
+
+    public static void insertion(){
+        //Faz a ordenação com o Insertion Sort
+        int[] array = new int[]{49, 15, 40, 27, 20, 19, 50, 2, 12, 28, 49, 44, 9, 59, 18, 5, 30, 6, 7, 28};
+        array = Insertion.Sort(array);
     }
 
 
