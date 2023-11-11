@@ -13,7 +13,6 @@ public class Insertion {
             System.out.println("Iteração " + (i));
             System.out.println(Arrays.toString(array));
         }
-        System.out.println("Array organizado com o Insertion Sort");
         return array;
     }
 }

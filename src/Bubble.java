@@ -6,7 +6,6 @@ public class Bubble {
         System.out.println(Arrays.toString(array));
         tam -= 1;
         if (tam <= 0 ){
-            System.out.println("Array organizado com o Bubble Sort");
             return array;
         } else {
             for (int i = 0; i < tam; i++){

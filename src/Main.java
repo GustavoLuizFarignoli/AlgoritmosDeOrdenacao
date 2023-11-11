@@ -17,5 +17,11 @@ public class Main {
         array = Insertion.Sort(array);
     }
 
+    public static void quick(){
+        //Faz a ordenação com o Quick Sort, com o pivot como ultimo elemento da partição
+        int[] array = new int[]{49, 15, 40, 27, 20, 19, 50, 2, 12, 28, 49, 44, 9, 59, 18, 5, 30, 6, 7, 28};
+        array = Quick.sort(array,0, array.length);
+    }
+
 
 }
