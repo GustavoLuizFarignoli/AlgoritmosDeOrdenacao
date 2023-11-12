@@ -5,6 +5,7 @@ public class Quick {
 
     public static int[] sort(int[] array, int inicio, int fim){
         //Pivot como último elemento da partição
+        System.out.println("---------------------------------------------------------------------------");
         System.out.println("Interação " + (iteracao));
         System.out.println(Arrays.toString(array));
         iteracao += 1;

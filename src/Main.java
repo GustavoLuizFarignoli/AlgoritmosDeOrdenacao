@@ -1,8 +1,37 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        quick();
+        Scanner teclado = new Scanner(System.in);
+        int op = teclado.nextInt();
+        while (op != 4)
+        System.out.println("""
+                ---------------------------------------------------------------------------
+                1. Bubble Sort
+                2. Insertion Sort
+                3. Quick Sort
+                4. Encerrar programa
+                ---------------------------------------------------------------------------
+                """);
+
+        switch (op){
+            case 1:
+                bubble();
+                break;
+            case 2:
+                insertion();
+                break;
+            case 3:
+                quick();
+                break;
+            case 4:
+                System.out.println("Encerrando...");
+                break;
+            default:
+                System.out.println("Insira um valor válido!");
+                break;
+        }
     }
 
     public static void bubble(){

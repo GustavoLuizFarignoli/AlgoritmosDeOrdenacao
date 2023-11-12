@@ -10,6 +10,7 @@ public class Insertion {
                     array[j] = atual;
                 }
             }
+            System.out.println("---------------------------------------------------------------------------");
             System.out.println("Iteração " + (i));
             System.out.println(Arrays.toString(array));
         }

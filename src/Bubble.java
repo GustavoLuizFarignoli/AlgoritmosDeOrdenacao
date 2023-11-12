@@ -2,6 +2,7 @@ import java.util.Arrays;
 
 public class Bubble {
     public static int[] sort(int[] array, int tam){
+        System.out.println("---------------------------------------------------------------------------");
         System.out.println("Interação " + (array.length - tam));
         System.out.println(Arrays.toString(array));
         tam -= 1;
