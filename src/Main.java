@@ -3,7 +3,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
+        quick();
+        /*Scanner teclado = new Scanner(System.in);
         System.out.println("""
                 ---------------------------------------------------------------------------
                 1. Bubble Sort
@@ -29,7 +30,7 @@ public class Main {
             default:
                 System.out.println("Insira um valor válido!");
                 break;
-        }
+        }*/
     }
 
     public static void bubble(){
@@ -47,6 +48,9 @@ public class Main {
     public static void quick(){
         //Faz a ordenação com o Quick Sort, com o pivot como ultimo elemento da partição
         int[] array = new int[]{49, 15, 40, 27, 20, 19, 50, 2, 12, 28, 49, 44, 9, 59, 18, 5, 30, 6, 7, 28};
+        System.out.println("---------------------------------------------------------------------------");
+        System.out.println("Array inicial: ");
+        System.out.println(Arrays.toString(array));
         array = Quick.sort(array,0, array.length);
     }
 

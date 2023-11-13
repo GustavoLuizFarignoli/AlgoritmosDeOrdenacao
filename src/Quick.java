@@ -1,17 +1,14 @@
 import java.util.Arrays;
 
 public class Quick {
-    private static int iteracao;
+    private static int iteracao = 1;
 
     public static int[] sort(int[] array, int inicio, int fim){
         //Pivot como último elemento da partição
-        System.out.println("---------------------------------------------------------------------------");
-        System.out.println("Interação " + (iteracao));
-        System.out.println(Arrays.toString(array));
-        iteracao += 1;
 
         int pivot = array[fim-1];
         int position = inicio;
+
         for (int i = inicio; i < fim; i++){
             if (array[i] <= pivot){
                 int temp = array[position];
@@ -26,6 +23,12 @@ public class Quick {
         if ((fim - position) >= 2){
             array = sort(array,position,fim);
         }
+
+        System.out.println("---------------------------------------------------------------------------");
+        System.out.println("Interação " + (iteracao));
+        System.out.println(Arrays.toString(array));
+        iteracao += 1;
+
         return array;
     }
 }
