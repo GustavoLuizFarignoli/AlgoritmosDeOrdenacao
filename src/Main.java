@@ -4,8 +4,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        int op = teclado.nextInt();
-        while (op != 4)
         System.out.println("""
                 ---------------------------------------------------------------------------
                 1. Bubble Sort
@@ -14,7 +12,7 @@ public class Main {
                 4. Encerrar programa
                 ---------------------------------------------------------------------------
                 """);
-
+        int op = teclado.nextInt();
         switch (op){
             case 1:
                 bubble();
